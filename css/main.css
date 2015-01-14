@@ -1,0 +1,32 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.quizanswer {
+	height:100px;
+	font-size:2.5em;
+	margin-bottom: 20px;
+	
+}
+
+/* AUDIO PLAYER STYLES */
+
+.jp-audio {
+	width:100%;
+}
+
+.jp-audio .jp-controls {
+	width:100%;
+}
+
+
+
+.questionrow {
+	margin-top: 20px;
+}
+
+.questionwell, .jp-audio {
+	height:100%;
+}
