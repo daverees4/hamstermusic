@@ -29,3 +29,6 @@
 	margin-top: 20px;
 }
 
+#youtube-player-container, #exercise-container {
+	display:none;
+} 
