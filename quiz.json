@@ -1,0 +1,29 @@
+	{
+	    "items": [
+	        {
+	            "type": "video",
+	            "title": "Monophonic Textures",
+	            "videoid": "1_BFrb_HfoQ"
+	        },
+	        {
+	            "type": "video",
+	            "title":"Homophonic Textures",
+	            "videoid": "xpscshv3Exk"
+	        },
+	        {
+	            "type": "video",
+	            "title":"Polyphonic Textures",
+	            "videoid": "3jGkGvTJK7A"
+	        },
+	        {
+	            "type": "exercise",
+	            "question": "Here's the question!",
+	            "title":"Test Exercise",
+	            "audiofile": "http: //www.jplayer.org/audio/m4a/Miaow-07-Bubble",
+	            "answer1": "Answer1",
+	            "answer2": "Answer2",
+	            "answer3": "Answer3",
+	            "answer4": "Answer4"
+	        }
+	    ]
+	}

@@ -21,12 +21,11 @@
 	width:100%;
 }
 
-
-
-.questionrow {
-	margin-top: 20px;
-}
-
 .questionwell, .jp-audio {
 	height:100%;
 }
+
+#pagecontent{
+	margin-top: 20px;
+}
+
