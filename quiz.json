@@ -17,13 +17,144 @@
 	        },
 	        {
 	            "type": "exercise",
-	            "question": "Here's the question!",
 	            "title":"Test Exercise",
+	            "audiocredit":"Credit: A N Other",
 	            "audiofile": "http: //www.jplayer.org/audio/m4a/Miaow-07-Bubble",
-	            "answer1": "Answer1",
-	            "answer2": "Answer2",
-	            "answer3": "Answer3",
-	            "answer4": "Answer4"
+	            "questions": [
+		                      {
+			                      "questiontext":"At the start, the texture is:",
+			                      "answers": [
+				                      {
+					                      "answertext":"Monophonic"
+					                  },
+					                  {
+					                      "answertext":"Polyphonic"
+					                  },
+					                  {
+					                      "answertext":"Homophonic"
+					                  }],
+				                        "correct": [{"correctanswer":"0"}]
+			               
+		                      },
+		                         {
+			                      "questiontext":"The melody, “Oh when the saints”, is then repeated. How many instruments are now playing?",
+			                      "answers": [
+				                      {
+					                      "answertext":"2"
+					                  },
+					                  {
+					                      "answertext":"3"
+					                  },
+					                  {
+					                      "answertext":"4"
+					                  },
+					                  {
+									      "answertext":"5"
+				                      }],
+				                        "correct": [{"correctanswer":"1"}]
+			               
+		                      },
+		                                 {
+			                      "questiontext":"Which instrument plays accompanying (backing) chords?",
+			                      "answers": [
+				                      {
+					                      "answertext":"Piano"
+					                  },
+					                  {
+					                      "answertext":"Acoustic Guitar"
+					                  },
+					                  {
+					                      "answertext":"Electric Guitar"
+					                  }],
+				                       "correct": [{"correctanswer":"2"}]
+			               
+		                      },
+		                 
+		                             {
+			                      "questiontext":"Then follows a section in which two guitars play improvised (made up) solos. Which phrase best describes the relationship between the parts?",
+			                      "answers": [
+				                      {
+					                      "answertext":"They sometimes play together"
+					                  },
+					                  {
+					                      "answertext":"Call and Response"
+					                  },
+					                  {
+					                      "answertext":"They both play at the same time"
+					                  }],
+				                   "correct": [{"correctanswer":"1"}]
+			               
+		                      },
+		                             {
+			                      "questiontext":"How would you describe the role of the drums in this music? Select TWO options.",
+			                      "answers": [
+				                      {
+					                      "answertext":"They emphasise the pulse"
+					                  },
+					                  {
+					                      "answertext":"They emphasise the bassline"
+					                  },
+					                  {
+					                      "answertext":"They play the same rhythm as the guitars"
+					                  },
+					                  {
+									      "answertext":"They provide a backing beat"
+				                      }],
+				                     "correct": [{"correctanswer":"0"}, {"correctanswer":"3"}]
+			               
+		                      },
+		                                 {
+			                      "questiontext":"How many instruments can be heard at the end of the recording?",
+			                      "answers": [
+				                      {
+					                      "answertext":"2"
+					                  },
+					                  {
+					                      "answertext":"3"
+					                  },
+					                  {
+					                      "answertext":"4"
+					                  },
+					                  {
+									      "answertext":"5"
+				                      }],
+				                        "correct": [{"correctanswer":"1"}]
+			               
+		                      },
+		                      {
+		                                   "questiontext":"Which word best describes the music for the majority of the recording?",
+			                      "answers": [
+				                      {
+					                      "answertext":"Homophobic"
+					                  },
+					                  {
+					                      "answertext":"Polyphonic"
+					                  },
+					                  {
+					                      "answertext":"Homophonic"
+					                  }],
+				                        "correct": [{"correctanswer":"2"}]
+			               
+		                      },
+		                                     {
+			                      "questiontext":"Why do you think the composer has chosen this texture?",
+			                      "answers": [
+				                      {
+					                      "answertext":"How the hell should I know?"
+					                  },
+					                  {
+					                      "answertext":"Why the hell should I care?"
+					                  },
+					                  {
+					                      "answertext":"Polyphony is known to cause impotence"
+					                  },
+					                  {
+									      "answertext":"Allows melody to be heard clearly"
+				                      }],
+				                     "correct": [{"correctanswer":"3"}]
+			               
+		                      }
+	            ]
 	        }
 	    ]
 	}

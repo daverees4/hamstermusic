@@ -16,13 +16,16 @@ $(function() {
                     for (x in items) {
                         $('#leftnav').append("<li role='presentation' ><a href='#' class='leftnavlink'>"+items[x].title+"</a></li>");
                     }
+                       $('.leftnavlink').on('click', function() {
+	      $("#jquery_jplayer_1").jPlayer('pause');
+	      });
                     
                     
                     $('.leftnavlink').on('click', function() {
-						loadItem(items[$(this).parent().index()]);
+						loadItem(items[$(this).parent().index()], $(this).parent().index());
 					});
 					
-					loadItem(items['0']);
+					loadItem(items['0'], 0);
 					$('#youtube-player-container').fitVids();
                 }
             }
@@ -31,18 +34,43 @@ $(function() {
 })
 
 
-function loadItem(index) {
+function loadItem(item, index) {
 	
 	
-	if(index.type=="video") {
+	if(item.type=="video") {
 	
 		$('#exercise-container').css('display','none');
 		$('#youtube-player-container').css('display','block');
-		$('#ytvideoplayer').attr("src", "http://www.youtube.com/embed/"+ index.videoid +"?rel=0&autoplay=0&showinfo=0");
+		$('#ytvideoplayer').attr("src", "http://www.youtube.com/embed/"+ item.videoid +"?rel=0&autoplay=0&showinfo=0");
 		
       } else {
 		$('#exercise-container').css('display','block');
 		$('#youtube-player-container').css('display','none');
+		$('#questionsdiv').html('');
+	
+		for (y in item.questions) {
+			$('#questionsdiv').append('<div class="row"><div class="col-md-12" id="question_'+y+'"><h4>'+item.questions[y].questiontext+'</h4></div><div id="question_'+y+'_answers"></div></div>');
+			for (z in item.questions[y].answers) {
+		     $('#question_'+y+'_answers').append('<div  class="col-md-3"><button id="q_'+y+'_answer_'+z+'" class="btn btn-large btn-block quizanswer">'+item.questions[y].answers[z].answertext+'</button></div>');
+		  
+		     
+			}
+			$('#questionsdiv').append('<hr />');
+			for (w in item.questions[y].correct) {
+			
+			   $('#q_'+y+'_answer_'+item.questions[y].correct[w].correctanswer).addClass('correct');
+			   }
+			 
+		}
+	
+		$('.quizanswer').on('click', function() {
+	if($(this).hasClass('correct')){
+		$(this).removeClass('btn-primary').addClass('btn-success');
+	} else {
+		$(this).shake().removeClass('btn-primary').addClass('btn-danger');
+	}
+});
+
 	}
 	
 	

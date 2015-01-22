@@ -27,8 +27,8 @@
         ready: function () {
           $(this).jPlayer("setMedia", {
             title: "Bubble",
-            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+            mp3: "sounds/saints.mp3",
+            oga: "sounds/saints.ogg"
           });
         },
         cssSelectorAncestor: "#jp_container_1",
@@ -41,6 +41,9 @@
         remainingDuration: true,
         toggleDuration: true
       });
+      $('.leftnavlink').on('click', function() {
+	      $("#jquery_jplayer_1").jPlayer('pause');
+	      });
     });
   </script>
     </body>
